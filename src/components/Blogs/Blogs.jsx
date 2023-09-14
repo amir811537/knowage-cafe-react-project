@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Blog from "../Blog/Blog";
+import propTypes from 'prop-types'
 
 const Blogs = ({handleAddBookmark}) => {
     const[blogs,setBlogs]=useState([]);
@@ -20,6 +21,6 @@ fetch('blogs.json')
            }
         </div>
     );
+ 
 };
-
 export default Blogs;

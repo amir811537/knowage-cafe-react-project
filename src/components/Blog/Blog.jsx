@@ -19,7 +19,7 @@ const {title,posted_date,hashtags, cover,reading_time,author,author_img}=blog;
             </div>
             <div>
             <span>{reading_time} min read</span>
-            <button onClick={handleAddBookmark} className='ml-2 text-red-600'> <FaBookmark></FaBookmark></button>
+            <button onClick={()=>handleAddBookmark(blog)} className='ml-2 text-red-600'> <FaBookmark></FaBookmark></button>
             </div>
            </div>
            <h2 className='text-4xl'>{title}</h2> 
